@@ -1,8 +1,15 @@
-// config.js
-// Exported as an ES module
-export const config = {
-    client_id: "058478e81bf4404f970d861bcd7fa8c0",  // Your Spotify app client ID
-    redirect_uri: "https://nycapitalrestoration.github.io/login.html",
-    slowdown_import: 200,   // delay in ms for API calls
-    slowdown_export: 200
-};
+// ------------------------------
+// CONFIGURATION
+// ------------------------------
+const SPOTIFY_CLIENT_ID = "058478e81bf4404f970d861bcd7fa8c0";
+
+// !!! your real GitHub Pages URL !!!
+const REDIRECT_URI = "https://nycapitalrestoration.github.io/login.html";
+
+const SPOTIFY_SCOPES = [
+    "playlist-read-private",
+    "playlist-read-collaborative",
+    "playlist-modify-private",
+    "playlist-modify-public",
+    "user-library-read"
+].join(" ");
