@@ -1,7 +1,7 @@
 config = {
-"uri":"http://localhost:8888",
-"redirect_uri":"http://localhost:8888/login.html",
-"client_id":"[YOUR_TOKEN_HERE]",
-"slowdown_import": 100,
-"slowdown_export": 100
+  "uri": "https://nycapitalrestoration.github.io",
+  "redirect_uri": "https://nycapitalrestoration.github.io/login.html",
+  "client_id": "058478e81bf4404f970d861bcd7fa8c0",
+  "slowdown_import": 200,
+  "slowdown_export": 200
 };
