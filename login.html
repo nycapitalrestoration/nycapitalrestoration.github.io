@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Login Redirect</title>
+</head>
+<body>
+    <script type="module">
+        import { finishSpotifyLogin } from './auth.js';
+        import { config } from './config.js';
+        await finishSpotifyLogin(config);
+        // Redirect back to main page after login
+        window.location.href = './index.html';
+    </script>
+</body>
+</html>
